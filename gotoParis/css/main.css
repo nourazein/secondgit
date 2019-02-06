@@ -7,7 +7,7 @@ body{
 }
     #gridlayout{
     width: 1200px;
-    min-height: 3200px;
+    min-height: 2900px;
     margin: auto;
     display: grid;
     grid-template-rows: 160px 1fr 100px;
@@ -48,7 +48,7 @@ text-decoration: none;
 main{
 grid-row: 2/3;
 display: grid;
-grid-template-rows: 1fr 440px 1fr 1fr 1fr;
+grid-template-rows: 1fr 440px 1fr 1fr 400px;
 }
 
 main #travels{
@@ -140,6 +140,7 @@ main #events h2{
     grid-row: 1/2;
     font-weight: 100;
     font-size: 27px;
+    color: white;
 }
 main #events figure{
     margin-left: 48px
@@ -167,21 +168,76 @@ main #events #mont{
         color: white;
     }
     main #home img{
-        margin-top: 12px;
-        margin-left: 10px;
+        margin-top: 6px;
+        margin-left: 6px;
     }
     main #lastmain{
         grid-row: 5/-1;
         display: grid;
         background-color: #ebc656;
-        grid-auto-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
     main #lastmain #about{
         grid-column: 1/2;
     }
+    main #lastmain #about h3{
+        font-size: 31px;
+        font-weight: 100;
+        margin-top: 10px;
+        margin-left: 10px;
+
+    }
+    main #lastmain #about p{
+        width: 80%;
+        font-size: 31px;
+        margin-top: 20px;
+        margin-left: 10px;
+
+    }
+    main #lastmain #about p span{
+        color: #013a7a;
+
+    }
     main #lastmain #contact{
-        grid-row: 2/-1;
+        grid-column: 2/-1;
+    }
+    main #lastmain #contact form{
+        margin-left: 50px;
+
+
+    }
+    main #lastmain #contact form h3{
+        font-size: 31px;
+        font-weight: 100;
+        margin-top: 10px;
+       
+
+    }
+    main #lastmain #contact form .contactformgroub{
+        margin-top: 30px;
+
+    }
+    main #lastmain #contact form .contactformgroub input{
+        width: 250px;
+    }
+    main #lastmain #contact form button{
+        background-color: #2e3192;
+        color: white;
+        border: none;
+        text-align: center;
+        padding: 5px;
+
     }
 footer{
-grid-row: 7/-1
+grid-row: 3/-1;
+background-color: #2e3192;
+display: grid;
+grid-template-rows: 70% 30%;
+grid-template-columns: 1fr 300px;
+}
+footer span{
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+    margin: 4px;
+    color: white;
 }
