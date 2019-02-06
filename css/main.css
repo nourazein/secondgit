@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #282828;
+}
+    #gridlayout{
+    width: 1200px;
+    min-height: 3200px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 160px 1fr 100px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+header{
+grid-row: 1/2;
+width: 100%;
+display: grid;
+grid-template-columns: 100px 1fr 1fr 1fr;
+background-color: #013a7a;
+}
+
+header img{
+    width: 100%;
+}
+header nav{
+    grid-column: 3/-1;
+    margin-top: 130px;
+    
+}
+header nav ul{
+
+}
+header nav ul li{
+    display: inline;
+    list-style: none;
+    margin-left: 69px;
+}
+header nav ul li a{
+color: white;
+text-decoration: none;
+}
+
+
+
+main{
+grid-row: 2/3;
+display: grid;
+grid-template-rows: 1fr 440px 1fr 1fr 1fr;
+}
+
+main #travels{
+    grid-row: 1/2;
+    display: grid;
+grid-template-columns: 300px 1fr;
+grid-template-rows: 1fr 40px 25px 95px 1fr;
+}
+main #travels #travelsBackground{
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+main #travels h2{
+    color: white;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-left: 15px;
+    font-weight: 100;
+    font-size: 30px;  
+}
+
+main #travels form{
+grid-column: 1/-1;
+grid-row: 4/5;
+color: white;
+margin-left: 43px;
+display: flex;
+
+
+}
+main #travels form .formgroub{
+    margin-left: 45px;
+}
+main #travels form .formgroub button{
+    background-color: #ebc656;
+    border: none;
+    padding: 20px;
+    border-radius: 50%;
+}
+main #hotels{
+    grid-row: 2/3;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 120px 1fr;
+}
+main #hotels h2{
+    margin-left: 96px;
+    margin-top: 30px;
+    font-weight: 100;
+    font-size: 30px; 
+}
+main #hotels figure{
+    margin-left: 48px;
+}
+
+main #hotels #Vaneau{
+    grid-column: 1/2;
+    grid-row: 2/-1;
+}
+main #hotels #Duquesne{
+    grid-column: 2/3;
+    grid-row: 2/-1;
+}
+main #hotels #Lumen{
+    grid-column: 3/-1;
+    grid-row: 2/-1;
+}
+main #events{
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 190px 1fr;
+}
+main #events #eventsbackground{
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+main #events h2{
+    margin-left: 15px ;
+    margin-top: 80px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-weight: 100;
+    font-size: 27px;
+}
+main #events figure{
+    margin-left: 48px
+}
+main #events #disney{
+    grid-column: 1/2;
+    grid-row: 2/-1;}
+main #events #museum{
+    grid-column: 2/3;
+    grid-row: 2/-1;}
+main #events #mont{
+    grid-column: 3/-1;
+    grid-row: 2/-1;}
+    main #home{
+        grid-row: 4/5;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 80% 20%;
+        background-color: #013a7a
+    }
+    main #home p{
+        margin-left: 10px;
+        margin-top: 65px;
+        width: 70% ;
+        color: white;
+    }
+    main #home img{
+        margin-top: 12px;
+        margin-left: 10px;
+    }
+    main #lastmain{
+        grid-row: 5/-1;
+        display: grid;
+        background-color: #ebc656;
+        grid-auto-columns: 1fr 1fr;
+    }
+    main #lastmain #about{
+        grid-column: 1/2;
+    }
+    main #lastmain #contact{
+        grid-row: 2/-1;
+    }
+footer{
+grid-row: 7/-1
+}
